@@ -1,0 +1,50 @@
+ext {
+    hibernateVersion = '4.3.5.Final'
+    mysqlVersion = '5.1.31'
+    javaLanguageLevel = '1.7'
+    gradleVersion = '1.12'
+}
+
+subprojects {
+
+    apply plugin: 'java'
+    apply plugin: 'maven'
+
+    group = 'com.csyangchsh.hibernate.demo'
+
+    repositories {
+        mavenCentral()
+        mavenLocal()
+
+        maven {
+            name 'jboss-nexus'
+            url "http://repository.jboss.org/nexus/content/groups/public/"
+        }
+        maven {
+            name "jboss-snapshots"
+            url "http://snapshots.jboss.org/maven2/"
+        }
+    }
+
+    dependencies {
+        compile('org.hibernate:hibernate-core:' + rootProject.hibernateVersion)
+        compile('org.hibernate:hibernate-entitymanager:' + rootProject.hibernateVersion)
+        compile('org.hibernate:hibernate-ehcache:' + rootProject.hibernateVersion)
+        compile('mysql:mysql-connector-java:' + rootProject.mysqlVersion)
+    }
+
+
+    tasks.withType(JavaCompile.class).all { task ->
+        task.options.compilerArgs += [
+                "-nowarn",
+                "-proc:none",
+                "-encoding", "UTF-8",
+                "-source", rootProject.javaLanguageLevel,
+                "-target", rootProject.javaLanguageLevel
+        ]
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = gradleVersion
+}

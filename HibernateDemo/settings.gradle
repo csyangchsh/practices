@@ -1,0 +1,15 @@
+rootProject.name = 'HibernateDemo'
+
+include 'CacheDemo'
+
+rootProject.children.each { project ->
+    project.buildFileName = "build.gradle"
+    assert project.projectDir.isDirectory()
+    assert project.buildFile.exists()
+    assert project.buildFile.isFile()
+}
+
+include 'GetLoad'
+
+include 'Fetch'
+
