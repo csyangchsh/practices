@@ -33,25 +33,83 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
-  <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$" />
-  </component>
-  <component name="GradleSettings">
-    <option name="linkedExternalProjectsSettings">
-      <GradleProjectSettings>
-        <option name="distributionType" value="WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-          </set>
-        </option>
-      </GradleProjectSettings>
+  <component name="GradleLocalSettings">
+    <option name="availableTasks">
+      <set>
+        <GradleTaskDescriptor>
+          <option name="description" value="Assembles the outputs of this project." />
+          <option name="name" value="assemble" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Assembles and tests this project." />
+          <option name="name" value="build" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+          <option name="name" value="buildDependents" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Assembles and tests this project and all projects it depends on." />
+          <option name="name" value="buildNeeded" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Runs all checks." />
+          <option name="name" value="check" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Assembles classes 'main'." />
+          <option name="name" value="classes" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Deletes the build directory." />
+          <option name="name" value="clean" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Compiles Java source 'main:java'." />
+          <option name="name" value="compileJava" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Compiles Java source 'test:java'." />
+          <option name="name" value="compileTestJava" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Assembles a jar archive containing the main classes." />
+          <option name="name" value="jar" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Generates Javadoc API documentation for the main source code." />
+          <option name="name" value="javadoc" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Processes resources 'main:resources'." />
+          <option name="name" value="processResources" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Processes resources 'test:resources'." />
+          <option name="name" value="processTestResources" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Runs the unit tests." />
+          <option name="name" value="test" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="description" value="Assembles classes 'test'." />
+          <option name="name" value="testClasses" />
+        </GradleTaskDescriptor>
+        <GradleTaskDescriptor>
+          <option name="name" value="wrapper" />
+        </GradleTaskDescriptor>
+      </set>
     </option>
   </component>
+  <component name="GradleSettings">
+    <option name="gradleHome" value="$USER_HOME$/dev/gradle" />
+    <option name="linkedProjectPath" value="$USER_HOME$/workspace/lock free example/build.gradle" />
+    <option name="useAutoImport" value="false" />
+  </component>
   <component name="JRebel Project data">
-    <option name="privateKey" value="3082025d020100028181009f345fc7f778bb007c94d125c43457dd1a5a949a0ef3976e4dcf5c2824a20bec7fc73af1fe33dc237f7989629a8c656e0db7172b319f036aea9da1cb6463378ab26dd7cd0a5fe837f1cf0c9b109360df865dd1f6b7d9b250df849ac755cf6469d2bf2ba22cfce2934c8acf63ae336d2c9e76758634e9dab5aa93d9e4d824b0950203010001028181008356bfd5c6311184db422230d7e69ebdc72a0701f967b7fbc5b155c3c044f7354a4ce03217964cfbf4041df4fcaeea569a75fb6524f09bef2e5290d1aca5b581264174b844055b922705a93bd90c068ee4da56ca0b7b8794b78ead99fd686b3ee848f5516cea961202bb3d62dade84b5b307c7180f09b9241c5b63419110c199024100dc7d9b9fe27c692e719a1a8d0c432198335e48741978d6999877b1f76793a386c39438ab5ef5b16b55435af6e76046488e13796e294e4954cab305ecf66c02df024100b8d81030a321be6e5564eda7507b03e1060a3620399c701946b65e3045ccb9a54a0d62cada95cb6fe069b01d003e6b679553e39d70159d7dc02a77c3c6da8f0b024100d71741858b2fca7ba01eb0dfffa24d57686505511cb820c0dd5786a8cec5dbb44f7e7c79d0bce542cb7e55729eebf0243f5508144aff2fd2239ad8a0fd130909024044d99df62fdd52cc501c7ef512622fc8b2723d44f59092a4a79528323cdd8bccc86f81fbe33d66806e8b8f60ce0572062c360a134b7b91a5145dfd2c3c368e8f02400e54d3b55cbc6376f9dade7eb746c026924ad2dc68dad58addb652891d451dfbe6ebe63317886ae540923fa1fde510bee8d69cd30ca0b1909e9c0314974afd5b" />
-    <option name="publicKey" value="308189028181009f345fc7f778bb007c94d125c43457dd1a5a949a0ef3976e4dcf5c2824a20bec7fc73af1fe33dc237f7989629a8c656e0db7172b319f036aea9da1cb6463378ab26dd7cd0a5fe837f1cf0c9b109360df865dd1f6b7d9b250df849ac755cf6469d2bf2ba22cfce2934c8acf63ae336d2c9e76758634e9dab5aa93d9e4d824b0950203010001" />
+    <option name="privateKey" value="3082025c0201000281810096353293838429acb83504cb50e5065ce5e0c746d80f91181fffc08fea2958d1617c4426f8633ff554aaf338978c3d776c6bfc3dd6709a51619c6dfce28498a1552c233531319ea333dc755e45858071df7cc7e1361e61fe42604f83c208a408210365ef3fdc164b404062eb1349092e0af44c615734adbaa5f8556a8ba1299d02030100010281806081493f514e06607bf14465445200e68aa302255807985701a81595e102339842a3ce3da37450d1545688f1a11c6f195d457bc8570ffd75afdb0b276079847d92cd373413de4a74ecae603e55ce36decfc14852b0ee594a098b1ec797724c7df05a42665742c7c8691a742344a1d858e3e1f24a4994ad1be5316b690b0adcc1024100eb36a0780cc7782bae67d0b015fa91f3bc888ff13f3c02061a00a5b6054b83b877ee7cfdbe44ffc0c08b2aa363541a4e24738096c9e0b10aa0c99fb5120b9ac5024100a37b7045bd208ea81df7cb0a4bb9ca94213a0a1e93cfea3c67d100b173c4c032e2a1fbb3c9028cc689db269d1194b80aaa3bef23678793ac1421897e3af320f90240428e0279f5a3bb6d20bc5f6073d7a2d4c4d41f66b3edd6e4c316cbcce552a8c2d9acb1d15ab54b68cf1291ce099d129469dc04d6a5e8de2f93af797152d9d5c1024100834360a14e3aeef043a7ab6a67e514a81d89a98865ac8269dffdabadcfc3818319ff6fc72a3596eceed17cce8ec83781b0b010d1ff9597578a8e670468b6c09902404fd5461451b46f96ebd0a4e6e8111209298a9785bf6f185e82ce7e7f53306066bbad73fad71e21f30ac093e35dbacf2ae0d9c0e56bb856e0ea0bfa580c770804" />
+    <option name="publicKey" value="3081890281810096353293838429acb83504cb50e5065ce5e0c746d80f91181fffc08fea2958d1617c4426f8633ff554aaf338978c3d776c6bfc3dd6709a51619c6dfce28498a1552c233531319ea333dc755e45858071df7cc7e1361e61fe42604f83c208a408210365ef3fdc164b404062eb1349092e0af44c615734adbaa5f8556a8ba1299d0203010001" />
   </component>
   <component name="Palette2">
     <group name="Swing">
@@ -174,9 +232,157 @@
       </item>
     </group>
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>ActionScript specificJavaScript</id>
+          </State>
+          <State>
+            <id>Ant inspections</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Class structure</id>
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+          <State>
+            <id>Control flow issues</id>
+          </State>
+          <State>
+            <id>Error handling</id>
+          </State>
+          <State>
+            <id>Faces Model</id>
+          </State>
+          <State>
+            <id>FreeMarker inspections</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralCoffeeScript</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>Hibernate Issues</id>
+          </State>
+          <State>
+            <id>Imports</id>
+          </State>
+          <State>
+            <id>IntelliJ IDEA Platform Inspections</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>J2ME issues</id>
+          </State>
+          <State>
+            <id>JSP Inspections</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Javadoc issues</id>
+          </State>
+          <State>
+            <id>LESS</id>
+          </State>
+          <State>
+            <id>OSGi</id>
+          </State>
+          <State>
+            <id>OtherGroovy</id>
+          </State>
+          <State>
+            <id>Portability issues</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsGroovy</id>
+          </State>
+          <State>
+            <id>Probable bugs</id>
+          </State>
+          <State>
+            <id>Properties Files</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>Resource management issues</id>
+          </State>
+          <State>
+            <id>SASS/SCSS</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>Spring Model</id>
+          </State>
+          <State>
+            <id>Struts</id>
+          </State>
+          <State>
+            <id>Struts 2Struts</id>
+          </State>
+          <State>
+            <id>TestNG</id>
+          </State>
+          <State>
+            <id>Threading issues</id>
+          </State>
+          <State>
+            <id>Validity issuesGroovy</id>
+          </State>
+          <State>
+            <id>Velocity inspections</id>
+          </State>
+          <State>
+            <id>Web Services</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>DefaultFileTemplate</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JavaIO.iml" filepath="$PROJECT_DIR$/JavaIO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithms.iml" filepath="$PROJECT_DIR$/algorithms.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
@@ -184,35 +390,6 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="" />
-  </component>
-  <component name="libraryTable">
-    <library name="Gradle: guava-17.0">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/17.0/9c6ef172e8de35fd8d4d8783e4821e57cdef7445/guava-17.0.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/17.0/7ca0efbeb87ca845b5d7a0ac9c21a4b7b95f7b28/guava-17.0-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: hamcrest-core-1.3">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: junit-4.11">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/4e031bb61df09069aeb2bffb4019e7a5034a4ee0/junit-4.11.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar!/" />
-      </SOURCES>
-    </library>
   </component>
   <component name="masterDetails">
     <states>
