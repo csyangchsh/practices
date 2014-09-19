@@ -2,6 +2,12 @@ rootProject.name = 'HibernateDemo'
 
 include 'CacheDemo'
 
+include 'GetLoad'
+
+include 'Fetch'
+
+include 'relation_mapping'
+
 rootProject.children.each { project ->
     project.buildFileName = "build.gradle"
     assert project.projectDir.isDirectory()
@@ -9,7 +15,4 @@ rootProject.children.each { project ->
     assert project.buildFile.isFile()
 }
 
-include 'GetLoad'
-
-include 'Fetch'
 

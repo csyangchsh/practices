@@ -17,3 +17,5 @@ Code inspired by Brett Meyer [https://github.com/brmeyer/HibernateDemos](https:/
 ## GetLoadDemo
 
 Get() vs Load ()
+
+## [Relation Mapping](relation.md)
